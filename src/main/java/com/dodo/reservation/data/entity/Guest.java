@@ -1,9 +1,12 @@
 package com.dodo.reservation.data.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="GUEST")
+@Data
 public class Guest {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
